@@ -54,7 +54,7 @@ export default function Catalogue() {
         </h1>
         {list.data && (
           <p className="mt-1 text-sm text-muted">
-            {list.data.count} tenue{list.data.count > 1 ? 's' : ''} • les plus récentes d'abord
+            {list.data.count} tenue{list.data.count > 1 ? 's' : ''} • les plus récentes d'abOord
           </p>
         )}
       </header>
