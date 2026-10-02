@@ -1,15 +1,15 @@
-import { Link, Route, Routes, useLocation } from 'react-router-dom'
-import Layout from './components/Layout'
-import Home from './pages/Home'
-import Catalogue from './pages/Catalogue'
-import TenueDetail, { TenueModal } from './pages/TenueDetail'
-import Cart from './pages/Cart'
-import Favorites from './pages/Favorites'
-import AdminLayout from './admin/AdminLayout'
-import Login from './admin/Login'
-import Dashboard from './admin/Dashboard'
-import TenueForm from './admin/TenueForm'
-import Categories from './admin/Categories'
+import { Link, Route, Routes, useLocation } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Catalogue from "./pages/Catalogue";
+import TenueDetail, { TenueModal } from "./pages/TenueDetail";
+import Cart from "./pages/Cart";
+import Favorites from "./pages/Favorites";
+import AdminLayout from "./admin/AdminLayout";
+import Login from "./admin/Login";
+import Dashboard from "./admin/Dashboard";
+import TenueForm from "./admin/TenueForm";
+import Categories from "./admin/Categories";
 
 function NotFound() {
   return (
@@ -19,13 +19,13 @@ function NotFound() {
         Retour à l'accueil
       </Link>
     </div>
-  )
+  );
 }
 
 export default function App() {
-  const location = useLocation()
+  const location = useLocation();
   // Un clic sur une tenue ouvre l'aperçu PAR-DESSUS la page en cours (catalogue, accueil…)
-  const background = location.state?.background
+  const background = location.state?.background;
 
   return (
     <>
@@ -54,5 +54,5 @@ export default function App() {
         </Routes>
       )}
     </>
-  )
+  );
 }
